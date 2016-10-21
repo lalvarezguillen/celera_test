@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Github Navigator</title>
+</head>
+<body>
+    <h1>{{ search_term }}</h1>
+{% for result in search_results %}
+    <h2>{{ result.index }}. {{ result.name }}</h2>
+    <h3> Created {{ result.created_at }}</h3>
+    <a href="{{ result.owner.url }}"><img src="{{ result.owner.avatar_url }}" alt="avatar" height="42" width="42"/></a>
+    {{ result.owner.login }}
+    <h3>LastCommit</h3>
+    {sha} {commit_message}  {commit_author_name}
+    <hr/>
+{% endfor %}
+</body>
+</html>
