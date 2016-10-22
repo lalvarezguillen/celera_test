@@ -11,7 +11,7 @@
     <a href="{{ result.owner.url }}"><img src="{{ result.owner.avatar_url }}" alt="avatar" height="42" width="42"/></a>
     {{ result.owner.login }}
     <h3>LastCommit</h3>
-    {sha} {commit_message}  {commit_author_name}
+    {{ result.sha }} {{ result.message }}  {{ result.author }}
     <hr/>
 {% endfor %}
 </body>

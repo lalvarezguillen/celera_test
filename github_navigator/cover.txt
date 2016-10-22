@@ -1,0 +1,17 @@
+Usage:
+
+    1) Install dependencies with the command: pip install -r requirements.txt
+    2) Run the application with the command: python application.py
+       Optional parameter --port can be used to specify the port to run on.
+       Otherwise it'll run on port 9876, as pictured on assignment.txt
+       
+    3) If the application is intended to run on a different web server than Flask's 
+    integrated one (ie: gunicorn, nginx), the WSGI application can be accessed via application:app
+
+    
+Notes:
+
+    * No testing code was included, to stick to assignment requirements.
+    * The code wasn't wrapped with proper packaging, to stick to assignment
+    requirements.
+    * The code is able to run on Python2 and Python3
